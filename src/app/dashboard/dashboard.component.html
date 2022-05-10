@@ -1,5 +1,5 @@
 <app-titulo [title]="title"></app-titulo>
-  <ul>
+  <!-- <ul>
     <li *ngFor="let dash of dashbord">
       {{dash.nome}}
       {{dash.simbolo}}
@@ -10,5 +10,33 @@
       {{dash.nome}}
       {{dash.simbolo}}
       {{dash.preco}}</li>
-  </ul>
-  
+  </ul> -->
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Preço</th>
+        <th scope="col">24h%</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dash of dashbord">
+        <th scope="row">{{dash.id}}</th>
+        <td>
+          <div class="coin">
+            <img class="coin-logo" src="btcoin-logo" src={{dash.img}} alt="BTC-logo">
+            <div class="coin-name">
+              <p>{{dash.name}} {{dash.subname}}</p>
+              </div>
+            </div>
+
+        </td>
+        <td>{{dash.price}}</td>
+        <td>@mdo</td>
+      </tr>
+     
+      
+    </tbody>
+  </table>

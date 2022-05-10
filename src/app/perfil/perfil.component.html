@@ -1,4 +1,10 @@
 <app-titulo [title]="title"></app-titulo>
-<p>
-  perfil works!
-</p>
+
+<ul>
+  <li *ngFor="let perfil of perfil">
+    {{perfil.nome}}
+    {{perfil.sobrenome}}
+    {{perfil.telefone}}
+  </li>
+</ul>
+

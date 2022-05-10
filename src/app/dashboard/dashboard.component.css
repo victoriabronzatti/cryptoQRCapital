@@ -1,0 +1,16 @@
+.coin{
+display: flex;
+}
+.coin-name{
+    display: flex;
+    font-weight: 700;
+}
+.subcoin-name{
+    display: flex;
+    color: rgb(128, 138, 157)
+}
+.coin-logo{
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+}
