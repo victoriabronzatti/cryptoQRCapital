@@ -11,7 +11,7 @@ export class PerfilComponent implements OnInit {
 
   public 'perfil' = [
 
-  {nome: 'Victória', sobrenome: 'Bronzatti', telefone: '(16) 98875-4628'}
+  {nome: 'Victória', sobrenome: 'Bronzatti', telefone: '(16) 98875-4628', email: 'victoria@gmail.com'},
   
   ];
   constructor() { }

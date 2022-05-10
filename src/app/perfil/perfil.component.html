@@ -1,10 +1,31 @@
 <app-titulo [title]="title"></app-titulo>
 
-<ul>
+<!-- <ul>
   <li *ngFor="let perfil of perfil">
     {{perfil.nome}}
     {{perfil.sobrenome}}
     {{perfil.telefone}}
   </li>
-</ul>
+</ul> -->
 
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">E-mail</th>
+      <th scope="col">Telefone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr  *ngFor="let perfil of perfil">
+      <td>
+        <div class="name">
+            <p>{{perfil.nome}} {{perfil.sobrenome}}</p>
+        </div>
+      </td>
+      <td>{{perfil.email}}</td>
+      <td>{{perfil.telefone}}</td>
+    </tr>
+   
+    
+  </tbody>
