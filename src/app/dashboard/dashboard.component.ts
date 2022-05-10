@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  title = 'Dashbord' //essa variavel já tem uma referencia no html
+  public title = 'Dashboard' //essa variavel já tem uma referencia no html
   dashbord = [
     { nome: 'Bitcoin'},
     { simbolo:'Símbolo:'},
