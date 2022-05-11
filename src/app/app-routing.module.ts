@@ -6,7 +6,7 @@ import { PerfilComponent } from './views/perfil/perfil.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo: 'login', pathMatch: 'full'}, // aqui eu disse que quando eu não adicionar nada no path ele vai automaticamente para o dashboard
+  {path: '', redirectTo: 'dashboard', pathMatch: 'full'}, // aqui eu disse que quando eu não adicionar nada no path ele vai automaticamente para o dashboard
   {path: 'dashboard', component: DashboardComponent},
   {path: 'login', component: LoginComponent},
   {path: 'perfil', component: PerfilComponent},
