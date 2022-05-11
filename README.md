@@ -1,27 +1,26 @@
 # CryptoQR
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+Projeto desenvolvido em Angular (version 13.3.5.) com o intuito de criar uma área logada com dashboard de pesquisa de criptomoedas, onde é possível pesquisar, selecionar quais moedas o usuário deseja acompanhar a cotação de preço.
 
-## Development server
+## Servidor de desenvolvimento
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Utilize o comando `ng serve`ou `npm start`, após compilação, o projeto estará disponível no endereço `http://localhost:4200`.
 
-## Code scaffolding
+A aplicação deve ser realizada o reload automático ao alterar qualquer um dos arquivos do projetos.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Funcionamento
+A área logada com dashboard de pesquisa de criptomoedas, onde é possível pesquisar, selecionar quais moedas o usuário deseja acompanhar a cotação do preço.
 
-## Build
+`Buscador:` O componente de busca funciona no modelo autocomplete, ou seja, quando o usuário escreve os possíveis resultados começam a surgir. Além disso, uma vez que o usuário clica em um item do autocomplete, a moeda pesquisada é adicionada no dashboard.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+`Dashboard:`O componente dashboard agrupa todas as moedas que serão acompanhadas pelo usuário. Cada item de dashboard deve apresentar as seguinte informações:
 
-## Running unit tests
+`Nome:` Exibe o nome da moeda.
+`Símbolo:` Exibe o símbolo da moeda.
+`Preço:` Exibe o preço da moeda.
+`Sinalização:` Exibe a variação (em %) do preço da moeda nas últimas 24h. Caso tenha aumentado, a variação precisa estar com a cor verde, do contrário, vermelha.
+Por último, o dashboard deve atualizar o preço a cada 5s.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## O que não funcionou
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+`Funcionalidades do sistema`como API, autocomplete e login. 

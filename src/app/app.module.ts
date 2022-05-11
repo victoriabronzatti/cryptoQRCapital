@@ -11,6 +11,7 @@ import { TituloComponent } from './views/titulo/titulo.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [					
@@ -23,7 +24,7 @@ import { FormsModule } from '@angular/forms';
    ],
   imports: [
     BrowserModule,
-
+    HttpClientModule,
     AppRoutingModule,
     FormsModule,
     BsDropdownModule.forRoot(),
